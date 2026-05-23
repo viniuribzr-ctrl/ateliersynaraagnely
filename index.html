@@ -399,7 +399,7 @@
 <body class="">
 
     <header class="hero-header" id="heroHeader">
-        <div class="carousel-track" id="carouselView"><div class="slide active"><img src="https://images.unsplash.com/photo-1558603668-6570496b66f8?w=1200"></div><div class="slide exit"><img src="https://images.unsplash.com/photo-1520004481444-5f447e954831?w=1200"></div></div>
+        <div class="carousel-track" id="carouselView"><div class="slide exit"><img src="https://images.unsplash.com/photo-1558603668-6570496b66f8?w=1200"></div><div class="slide active"><img src="https://images.unsplash.com/photo-1520004481444-5f447e954831?w=1200"></div></div>
         <div class="hero-overlay"></div>
         
         <div class="header-content" id="headerContent">
@@ -818,6 +818,7 @@
         renderAll();
         startAutoplay();
     </script>
+
 
 
 </body></html>
