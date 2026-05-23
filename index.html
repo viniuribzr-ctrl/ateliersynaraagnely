@@ -1,14 +1,9 @@
-
-
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
+<html lang="pt-BR"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atelier Synara Agnely | Catálogo Online</title>
     <!-- Fontes Originais -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&amp;family=Montserrat:wght@300;400;600&amp;display=swap" rel="stylesheet">
     <style>
         :root {
             --black-purple: #0F021A;
@@ -45,7 +40,7 @@
         .hero-header {
             position: relative;
             width: 100%;
-            height: 200px; 
+            height: 440px; 
             overflow: hidden;
             display: flex;
             align-items: center;
@@ -401,27 +396,27 @@
         }
     </style>
 </head>
-<body>
+<body class="">
 
     <header class="hero-header" id="heroHeader">
-        <div class="carousel-track" id="carouselView"></div>
+        <div class="carousel-track" id="carouselView"><div class="slide active"><img src="https://images.unsplash.com/photo-1558603668-6570496b66f8?w=1200"></div><div class="slide exit"><img src="https://images.unsplash.com/photo-1520004481444-5f447e954831?w=1200"></div></div>
         <div class="hero-overlay"></div>
         
         <div class="header-content" id="headerContent">
-            <div class="logo-container" id="logoView"></div>
-            <h1 id="titleView">Atelier Synara Agnely</h1>
+            <div class="logo-container" id="logoView"><img src="https://i.postimg.co/N0MhXQvG/placeholder-logo.png" class="logo-img" alt="Logo"></div>
+            <h1 id="titleView" style="display: none;">Atelier Synara Agnely</h1>
             <p>Sublimação • Bordado • Serigrafia • DTF</p>
         </div>
 
-        <button class="carousel-arrow arrow-left" onclick="triggerManualSlide(-1)">&#10094;</button>
-        <button class="carousel-arrow arrow-right" onclick="triggerManualSlide(1)">&#10095;</button>
+        <button class="carousel-arrow arrow-left" onclick="triggerManualSlide(-1)">❮</button>
+        <button class="carousel-arrow arrow-right" onclick="triggerManualSlide(1)">❯</button>
     </header>
 
     <!-- STICKY HEADER -->
     <div class="sticky-wrapper" id="stickyNavbar">
         <nav class="tabs-container">
-            <div class="sticky-logo-area" id="stickyLogoView"></div>
-            <div class="tabs-nav-box" id="tabsNav"></div>
+            <div class="sticky-logo-area" id="stickyLogoView"><img src="https://i.postimg.co/N0MhXQvG/placeholder-logo.png" class="sticky-mini-logo" alt="Logo Compacta"></div>
+            <div class="tabs-nav-box" id="tabsNav"><button class="tab-btn active">Sublimação</button><button class="tab-btn ">Bordado</button><button class="tab-btn ">Serigrafia</button><button class="tab-btn ">teste</button></div>
         </nav>
     </div>
     <div class="content-spacer"></div>
@@ -429,12 +424,12 @@
     <!-- MODAL DETALHADO DO SERVIÇO (ABRINDO 30% MAIOR) -->
     <div id="serviceDetailModal" class="detail-modal">
         <div class="detail-content">
-            <span class="detail-close" onclick="closeDetailModal()">&times;</span>
+            <span class="detail-close" onclick="closeDetailModal()">×</span>
             
             <div class="detail-media-side">
                 <div id="detailSlidesContainer" style="width:100%; height:100%;"></div>
-                <button class="detail-arrow detail-arrow-left" onclick="changeDetailSlide(-1)">&#10094;</button>
-                <button class="detail-arrow detail-arrow-right" onclick="changeDetailSlide(1)">&#10095;</button>
+                <button class="detail-arrow detail-arrow-left" onclick="changeDetailSlide(-1)">❮</button>
+                <button class="detail-arrow detail-arrow-right" onclick="changeDetailSlide(1)">❯</button>
             </div>
 
             <div class="detail-info-side">
@@ -449,7 +444,7 @@
     <!-- Modal de Login -->
     <div id="loginModal" class="admin-modal">
         <div class="modal-content" style="max-width: 380px;">
-            <span class="close-modal" onclick="closeModals()">&times;</span>
+            <span class="close-modal" onclick="closeModals()">×</span>
             <h3 style="text-align: center; margin-bottom: 20px; color: var(--lilac);">Acesso Administrativo</h3>
             <label>Usuário:</label>
             <input type="text" id="usernameInput" placeholder="Usuário">
@@ -462,8 +457,8 @@
     <!-- Modal Principal do Painel -->
     <div id="adminPanelModal" class="admin-modal">
         <div class="modal-content">
-            <span class="close-modal" onclick="closeModals()">&times;</span>
-            <h2 style="color: var(--lilac); margin-bottom: 15px;">Painel de Controle — Identidade & Catálogo</h2>
+            <span class="close-modal" onclick="closeModals()">×</span>
+            <h2 style="color: var(--lilac); margin-bottom: 15px;">Painel de Controle — Identidade &amp; Catálogo</h2>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
                 <div class="admin-section-box">
@@ -515,7 +510,15 @@
     </div>
 
     <main class="catalog-container">
-        <div class="grid-services" id="catalogGrid"></div>
+        <div class="grid-services" id="catalogGrid"><div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500" class="service-img" onclick="openDetailModal(1)">
+                        <div class="service-info" onclick="openDetailModal(1)">
+                            <h3>Abadá de Carnaval</h3>
+                            <p>Sublimação total com toque super leve e secagem rápida. Ideal para blocos de grande porte com estampas vibrantes que não desbotam com o suor.</p>
+                            <span class="view-more-tag">✨ Ver Detalhes &amp; Fotos</span>
+                        </div>
+                        
+                    </div></div>
     </main>
 
     <footer>
@@ -534,7 +537,7 @@
                     <p>contato@synaraagnely.com.br</p>
                 </div>
             </div>
-            <p style="font-size: 0.85rem; color: #7B2CBF; font-weight: 600;">&copy; 2026 Atelier Synara Agnely. Portfólio Dinâmico Exclusivo.</p>
+            <p style="font-size: 0.85rem; color: #7B2CBF; font-weight: 600;">© 2026 Atelier Synara Agnely. Portfólio Dinâmico Exclusivo.</p>
             <button class="admin-toggle" id="mainAdminBtn" onclick="openLoginModal()" title="Área Restrita">⚙️</button>
         </div>
     </footer>
@@ -815,5 +818,6 @@
         renderAll();
         startAutoplay();
     </script>
-</body>
-</html>
+
+
+</body></html>
