@@ -45,7 +45,7 @@
         .hero-header {
             position: relative;
             width: 100%;
-            height: 440px; 
+            height: 200px; 
             overflow: hidden;
             display: flex;
             align-items: center;
